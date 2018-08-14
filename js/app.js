@@ -3,7 +3,6 @@
     "use strict";
 
     function getJson(fileName, callback) {
-        console.log(fileName);
         var xmlhttp;
         xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP"), xmlhttp.onreadystatechange = function() {
             if (4 === xmlhttp.readyState && 200 === xmlhttp.status) {
@@ -40,14 +39,11 @@
         html += '<div class="product-actions"><a href="#" class="btn btn-addtocart">adicionar ao carrinho <i class="material-icons">add_shopping_cart</i></a></div>';
         html += '</div>';
 
-        console.log(document.querySelector(type));
-
         document.querySelector(type).insertAdjacentHTML("beforeend", html);
     }
 
     function shelfRecommended(){
         getJson("products.json", function(j){ 
-            console.log(j);
 
             var productVisited = j[0].data.item;
             var recommendedProduct = j[0].data.recommendation;
@@ -56,10 +52,8 @@
 
             for (var i = 0; i < recommendedProduct.length; i++) {
                 createProductItem(recommendedProduct[i], ".shelf-recommended-items");
-                console.log("for");
             }
 
-            console.log("recommendedCarousel");
             recommendedCarousel();
         });
     }
