@@ -26,6 +26,11 @@ gulp.task('html', function () {
         .pipe(gulp.dest(bases.build));
 });
 
+gulp.task('copy', function () {
+    return gulp.src('./products.json')
+        .pipe(gulp.dest(bases.build));
+});
+
 gulp.task('sass', function () {
     return gulp.src(paths.sass)
         // .pipe(plumber())
@@ -91,7 +96,7 @@ gulp.task('copy-watch', ['copy'], function (done) {
     done();
 });
 
-gulp.task('serve', ['html', 'scripts', 'sass', 'images'], function() {
+gulp.task('serve', ['html', 'scripts', 'sass', 'images', 'copy'], function() {
 
     browserSync.init({
         server: bases.build

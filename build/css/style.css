@@ -786,7 +786,7 @@ h2 {
   width: 75%;
   overflow: hidden;
   padding: 0 0 40px; }
-  .recommended-products .shelf-recommended-item {
+  .recommended-products .product-item {
     float: left;
     width: 33.33333333%; }
 
@@ -811,6 +811,6 @@ h2 {
 .owl-carousel .owl-dot.active {
   background: #353f4f; }
 
-.owl-carousel .shelf-recommended-item {
+.owl-carousel .product-item {
   float: none;
   width: 100%; }
