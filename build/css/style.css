@@ -814,3 +814,17 @@ h2 {
 .owl-carousel .product-item {
   float: none;
   width: 100%; }
+
+@media (max-width: 991px) {
+  .product-visited {
+    width: 33.33333333%; }
+  .recommended-products {
+    width: 66.66666667%; } }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 16px; }
+  .product-visited {
+    width: 50%; }
+  .recommended-products {
+    width: 50%; } }
