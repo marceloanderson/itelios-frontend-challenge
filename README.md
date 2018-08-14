@@ -1,5 +1,11 @@
 ![Itelios](http://www.itelios.com.br/images/logo_itelios_orange@2x.png)
 
+# Itelios Frontend Challenge - Como executar
+
+Olá, para executar o projeto execute o comendo "NPM I" e após tudo instalado, execute o comendo Gulp.
+
+Para executar o projeto diretamente sem utilizar o Gulp, abra a pasta build e rode o arquivo index.html em seu navegador.
+
 # Itelios Frontend Challenge
 
 Bem-vindo ao desafio de admissão de front-end da Itelios! O que preparamos para este desafio é um pedacinho do que você irá fazer aqui na Itelios, caso seja admitido.
