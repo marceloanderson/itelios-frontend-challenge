@@ -160,9 +160,17 @@ h2{
 	font-size: 21px;
 	margin-top: 20px;
 	padding: 12px;
+	-webkit-transition: all .2s ease-in-out; 
+	-moz-transition: all .2s ease-in-out; 
+	-o-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out;
 
 	&:hover{
-
+		color: #1f2125;
+		border-left: 9px solid #ff6600;
+		i{
+			color: #ff6600;
+		}
 	}
 }
 
@@ -243,6 +251,12 @@ h2{
 	}
 }
 
+@media (max-width: 1199px) {
+	.btn-addtocart{
+		font-size: 16px;
+	}
+}
+
 .product-visited{
 	float: left;
 	width: 25%;
@@ -252,6 +266,7 @@ h2{
 	float: left;
 	width: 75%;
 	overflow: hidden;
+	padding: 0 0 40px;
 
 	.shelf-recommended-item{
 		float: left;
@@ -259,6 +274,14 @@ h2{
 	}
 }
 .owl-carousel {
+	.owl-prev,
+	.owl-next{
+		display: none;
+	}
+	.owl-dots { padding: 15px 0; position: relative; text-align: center; width: 100%; }
+	.owl-dot { background: rgba(0, 0, 0, 0.4); display: inline-block; height: 12px; border-radius: 50%; margin: 0 5px; width: 12px; }
+	.owl-dot.active { background: #353f4f; }
+
 	.shelf-recommended-item{
 		float: none;
 		width: 100%;
