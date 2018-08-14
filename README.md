@@ -2,7 +2,7 @@
 
 # Itelios Frontend Challenge - Como executar
 
-Olá, para executar o projeto execute o comendo "NPM I" e após tudo instalado, execute o comendo Gulp.
+Olá, para executar o projeto execute o comendo "NPM I" e após tudo instalado, execute o comando Gulp.
 
 Para executar o projeto diretamente sem utilizar o Gulp, abra a pasta build e rode o arquivo index.html em seu navegador.
 
