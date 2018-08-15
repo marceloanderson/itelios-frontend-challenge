@@ -2,7 +2,9 @@
 
 # Itelios Frontend Challenge - Como executar
 
-Olá, para executar o projeto execute o comendo "NPM I" e após tudo instalado, execute o comando Gulp.
+Olá, o projeto pode ser visualizado no seguinte link: http://marceloanderson.github.io/itelios/ 
+
+Para executar o projeto localmente execute o comando "NPM I" e após tudo instalado, execute o comando Gulp.
 
 Para executar o projeto diretamente sem utilizar o Gulp, abra a pasta build e rode o arquivo index.html em seu navegador.
 
