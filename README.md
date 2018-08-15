@@ -9,7 +9,7 @@ Olá, o projeto pode ser visualizado no seguinte link: http://marceloanderson.gi
 Este projeto pode ser instalado com o NPM I e executado chamando o gulp.
 
 - [npm](https://www.npmjs.com/package/owl.carousel): `npm install`
-- [bower](https://gulpjs.com/): `gulp`
+- [Gulp](https://gulpjs.com/): `gulp`
 
 #### HTML Estático
 
