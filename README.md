@@ -1,47 +1,30 @@
-![Itelios](http://www.itelios.com.br/images/logo_itelios_orange@2x.png)
-
-# Itelios Frontend Challenge - Como executar
+# Itelios Frontend Challenge
 
 Olá, o projeto pode ser visualizado no seguinte link: http://marceloanderson.github.io/itelios/ 
 
-Para executar o projeto localmente execute o comando "NPM I" e após tudo instalado, execute o comando Gulp.
+## Iniciando
 
-Para executar o projeto diretamente sem utilizar o Gulp, abra a pasta build e rode o arquivo index.html em seu navegador.
+### Instalação
 
-# Itelios Frontend Challenge
+Este projeto pode ser instalado com o NPM I e executado chamando o gulp.
 
-Bem-vindo ao desafio de admissão de front-end da Itelios! O que preparamos para este desafio é um pedacinho do que você irá fazer aqui na Itelios, caso seja admitido.
+- [npm](https://www.npmjs.com/package/owl.carousel): `npm install`
+- [bower](https://gulpjs.com/): `gulp`
 
-O objetivo do desafio é simples: Consumir uma json via xhttp e, com o resultado dele, montar um widget de prateleira de cross-sell. Na resposta deste request você receberá uma lista de produtos. Esta lista servirá para montar um pequeno carrossel de produtos. 
+#### HTML Estático
 
-## Design
+Para rodar o HTML estático do projeto, baixe o repositório, abra a pasta build e rode o arquivo index.html em seu navegador.
 
-- A prateleira apresentada deve seguir o [seguinte design](desafio-front-end-itelios.jpg)
-- Baseado neste layout, faça uma adaptação responsiva para celulares.
+### O Teste
 
-## Como realizar o teste
+Este Teste foi desenvolvido com `HTML`, `CSS`, `JS` e `jQuery`.
 
-- Faça um fork deste repositório em seu GitHub
-- Adicione ao Readme uma descrição de como executar seu projeto
-- Descreva as funcionalidades do seu desafio, venda seu peixe! Por exemplo, se fez a prateleira com javascript puro, porém utilizou uma biblioteca para o carrossel, deixe isso no Readme. Se usou ES6 com um transpiler, conte isso pra gente. 
-- Não há um limite de tempo, porém consideramos ideal não gastar mais que 8h neste desafio
-- Faça commits parciais, para que possamos acompanhar o seu desenvolvimento.
-- Em caso de dúvidas, entre em contato com flora.braz@itelios.com
+Para o Carousel utilizei o plugin "owl-carousel" e consequentemente apliquei o jQuery no projeto.
+Com esse plugin, o desenvolvimento foi mais rápido e facilitou trabalhar a responsividade, utilização e animação do carousel.
+Em dispositivos móveis é possível rotacionar o caroussel arrastando o dedo pra esquerda e direita.
 
-## Dicas
- 
-- O ícone do botão é o add-shopping-plus, do Material Design. https://material.io/icons/
-- A fontes utilizadas são Roboto Condensed Bold (títulos), Roboto Regular (texto corrido) e Roboto Bold (preço e preço parcelado). 
-- We **<3** Vanilla Javascript. Tente executar este teste usando javascript puro. Só utilize bibliotecas como último recurso.
-- We **<3** CSS responsivo, organizado, modular e feito com pré-processadores. Sinta-se livre para usar a arquitetura CSS que achar mais adequada. 
-- Trabalhamos com clientes perfeccionistas, portanto tenha atenção com espaçamentos, tamanhos e estilos de fonte. 
-
-## Critérios de avaliação
-
-- Alcançar os objetivos propostos
-- Qualidade de código
-- Commits parciais, mostrando a linha de desenvolvimento
-- Boa descrição das funcionalidades do desafio
-- Não utilização de bibliotecas ou frameworks
-- Fidelidade ao design proposto
-- Adaptação mobile
+```javascript
+$(document).ready(function(){
+  $('.shelf-recommended-items').owlCarousel();
+});
+```
